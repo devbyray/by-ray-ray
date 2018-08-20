@@ -1,9 +1,8 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import get from 'lodash/get'
-import Img from 'gatsby-image'
+import Img from 'gatsby-image';
+import get from 'lodash/get';
+import React from 'react';
+import Helmet from 'react-helmet';
 
-import heroStyles from '../components/hero.module.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -13,11 +12,11 @@ class BlogPostTemplate extends React.Component {
     return (
       <div style={{ background: '#fff' }}>
         <Helmet title={`${post.title} | ${siteTitle}`} />
-        <div className={heroStyles.hero}>
-          <Img className={heroStyles.heroImage} alt={post.title} sizes={post.heroImage.sizes} />
+        <div>
+          <Img alt={post.title} sizes={post.heroImage.sizes} />
         </div>
-        <div className="wrapper">
-          <h1 className="section-headline">{post.title}</h1>
+        <div>
+          <h1>{post.title}</h1>
           <p
             style={{
               display: 'block',

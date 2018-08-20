@@ -1,8 +1,8 @@
-import React from 'react'
-import get from 'lodash/get'
-import Helmet from 'react-helmet'
-import Hero from '../components/hero'
-import ArticlePreview from '../components/article-preview'
+import get from 'lodash/get';
+import React from 'react';
+import Helmet from 'react-helmet';
+import ArticlePreview from '../components/article-preview';
+import Hero from '../components/hero';
 
 class RootIndex extends React.Component {
   render() {
@@ -11,12 +11,12 @@ class RootIndex extends React.Component {
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
 
     return (
-      <div style={{ background: '#fff' }}>
+      <div>
         <Helmet title={siteTitle} />
         <Hero data={author.node} />
-        <div className="wrapper">
-          <h2 className="section-headline">Recent articles</h2>
-          <ul className="article-list">
+        <div>
+          <h2>Recent articles</h2>
+          <ul>
             {posts.map(({ node }) => {
               return (
                 <li key={node.slug}>
