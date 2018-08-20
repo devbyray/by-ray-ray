@@ -36,7 +36,11 @@ build/Release
 node_modules/
 jspm_packages/
 
+<<<<<<< HEAD
 # Typescript v1 declaration files
+=======
+# TypeScript v1 declaration files
+>>>>>>> b55fb6ef9df6b5f31198d9cdf00257ebc34efdb0
 typings/
 
 # Optional npm cache directory
@@ -57,6 +61,7 @@ typings/
 # dotenv environment variables file
 .env
 
+<<<<<<< HEAD
 # build folder
 public
 
@@ -65,3 +70,7 @@ public
 
 # contentful config file
 .contentful.json
+=======
+# next.js build output
+.next
+>>>>>>> b55fb6ef9df6b5f31198d9cdf00257ebc34efdb0
